@@ -2,12 +2,12 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import './Cart.css'
 
-const Cart = () => {
+const Cart = ({isOpen}) => {
   const { cartItems, totalPrice } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
 
   return (
-    <aside>
+    <aside className={isOpen ? 'aside-show' : ''}>
       {cartItems.map((item) => (
         <div key={item.id} className="cart-items">
           <div className="items">

@@ -7,7 +7,7 @@ function App() {
     <>
     <NavBar />
     <Home />
-    <Cart />
+    {/* <Cart /> */}
     </>
   );
 }
