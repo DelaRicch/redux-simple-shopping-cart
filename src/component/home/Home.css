@@ -1,0 +1,65 @@
+.loading {
+    padding: 2rem;
+}
+
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main .cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    box-shadow: 0px 0px 5px 0px rgba(38, 35, 35, 0.494);
+    padding: 1rem 0;
+    margin: 0 auto;
+    transition: all .3s linear;
+}
+
+main .cart-items:hover {
+    box-shadow: 0px 0px 10px 0px rgba(38, 35, 35, 0.651);
+}
+
+main .cart-items .cart-image {
+    max-width: 20rem;
+    max-height: 23rem;
+}
+
+main .cart-items .cart-image img {
+    width: 100%;
+}
+
+main .cart-items .cart-desc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+main .cart-items .cart-desc h2{
+    font-size: 1.5rem;
+}
+
+main .cart-items .cart-desc button {
+    border: 1px solid;
+    padding: .2rem 1rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    background: #0057fa;
+    color: #ffffff;
+    transition: all .3s linear;
+}
+
+main .cart-items .cart-desc button:hover {
+    color: #0057fa;
+    background-color: #ffffff;
+    border-color: #0057fa;
+}
