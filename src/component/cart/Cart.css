@@ -87,6 +87,25 @@ aside .total .price {
     font-weight: 700;
 }
 
+aside .clear-cart {
+    border: 1px solid;
+    padding: .2rem 1rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    background: #0057fa;
+    color: #ffffff;
+    transition: all .3s linear;
+    width: max-content;
+    
+    margin: .5rem;
+}
+
+aside .clear-cart:hover {
+    color: #0057fa;
+    background-color: #ffffff;
+    border-color: #0057fa;
+}
+
 @media screen and (max-width: 600px) {
     aside {
         width: 95vw;

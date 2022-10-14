@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { clearCart } from "../../features/cart/CartSlice";
 import './Cart.css'
 
 const Cart = ({isOpen}) => {
@@ -31,6 +32,7 @@ const Cart = ({isOpen}) => {
             <span className="total-price">Total Price</span>
             <span className="price">${totalPrice.toFixed(2)}</span>
           </div>
+            <button className="clear-cart"  onClick={() => dispatch(clearCart())}>Clear Cart</button>
     </aside>
   );
 };

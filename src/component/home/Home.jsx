@@ -1,23 +1,20 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getCartItems } from '../../features/cart/CartSlice'
+import { getCartItems, addToCart } from '../../features/cart/CartSlice'
 import './Home.css'
 
 const Home = () => {
     const dispatch = useDispatch()
     const {cartItems, isLoadding} = useSelector((store)=>store.cart)
 
-    useEffect(() => {
-        dispatch(getCartItems)
-    }, [])
 
-    // if (isLoadding) {
-    //     return (
-    //         <div className="loading">
-    //             <h3>Loading...</h3>
-    //         </div>
-    //     )
-    // }
+    if (isLoadding) {
+        return (
+            <div className="loading">
+                <h3>Loading...</h3>
+            </div>
+        )
+    }
   return (
     <main>
         {
@@ -29,7 +26,7 @@ const Home = () => {
                     <div className="cart-desc">
                         <h2>{item.title}</h2>
                         <span>Price: ${item.price}</span>
-                        <button className="add-to-cart">Add to Cart</button>
+                        <button className="add-to-cart" onClick={() => dispatch(addToCart())}>Add to Cart</button>
                     </div>
                 </div>
             ))
