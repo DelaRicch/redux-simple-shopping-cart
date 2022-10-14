@@ -7,8 +7,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1rem;
-    max-width: 80rem;
+    gap: 1rem 5rem;
+    max-width: max-content;
     margin: 0 auto;
 }
 
@@ -72,6 +72,7 @@ main .cart-items .cart-desc button:hover {
         grid-template-columns: 1fr;
         margin: 0 auto;
         width: 100%;
+        gap: 1rem;
     }
 
     main .cart-items {

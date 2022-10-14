@@ -1,0 +1,115 @@
+aside {
+    width: 20rem;
+    height: max-content;
+    position: absolute;
+    right: 3rem;
+    top: 4.5rem;
+    padding: 2.5rem 0;
+    z-index: 100;
+    box-shadow: 0px 0px 5px 0px rgba(38,35,35,0.75);
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+aside .cart-items .items {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+} 
+
+aside hr {
+    height: 1px;
+    width: 100%;
+}
+
+aside .cart-items .items .item-image {
+    width: 4rem;
+    height: 7rem;
+}
+
+aside .cart-items .items .item-image img {
+    width: 100%;
+}
+
+aside .cart-items .items .item-desc h4 {
+font-size: .9rem;
+}
+
+aside .cart-items .items .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: 2rem;
+    background: #2092fdff;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+aside .cart-items .items .buttons span {
+    color: #ffffff;
+}
+
+aside .cart-items .items .buttons button {
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    background: none;
+    color: #ffffff;
+    transition: all .3s linear;
+    width: 100%;
+}
+
+aside .cart-items .items .buttons button:hover {
+    
+    background: #015db3ff;
+}
+
+aside .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+aside .total .price {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        width: 95vw;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    aside .cart-items .items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    aside .cart-items .items .item-image {
+        width: 10rem;
+        height: auto;
+    }
+
+    aside .cart-items .items .buttons {
+        flex-direction: row-reverse;
+        width: 50%;
+    }
+
+    aside .cart-items .items .buttons span {
+        margin: 0 1.5rem;
+    }
+}

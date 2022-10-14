@@ -5,8 +5,9 @@ import CartItem from '../../CartItem.json'
 const initialState = {
   isLoadding: true,
   cartItems: CartItem,
-  quantity: 0,
+  amount: 0,
   total: 0,
+  totalPrice: 0
 };
 
 const url = "https://course-api.com/react-useReducer-cart-project";
