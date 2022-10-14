@@ -1,8 +1,13 @@
 import React from 'react'
+import Logo from '../../assets/logo.png'
 
 const NavBar = () => {
   return (
-    <nav>NavBar</nav>
+    <nav>
+        <div className="logo">
+            <img src={Logo} alt={Logo} />
+        </div>
+    </nav>
   )
 }
 
