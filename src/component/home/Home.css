@@ -8,7 +8,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1rem;
-    width: 80%;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
@@ -62,4 +62,23 @@ main .cart-items .cart-desc button:hover {
     color: #0057fa;
     background-color: #ffffff;
     border-color: #0057fa;
+}
+
+/* mobile version */
+@media screen and (max-width: 600px) {
+    
+    main {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    main .cart-items {
+        width: 100%;
+    }
+
+    main .cart-items .cart-desc h2{
+        font-size: 1.3rem;
+    }
 }
