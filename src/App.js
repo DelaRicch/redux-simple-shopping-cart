@@ -18,7 +18,6 @@ function App() {
     <>
       <NavBar />
       <Home />
-      {/* <Cart /> */}
     </>
   );
 }

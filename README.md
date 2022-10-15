@@ -7,6 +7,7 @@ Tools
 4. Redux Toolkit
 5. React-Redux
 6. React Icons
+7. Implemented localStorage to store items added to cart even when page reloads
 
 NB: This might not be a perfect project but hoping to add more functionalities to it soon
 
@@ -16,3 +17,4 @@ TODO:
 3. Implement filter options for item type, price range, recently added stock
 4. Add animation using Framer Motion Library
 5. Implement User Login/ Registration functionalities
+6. Add admin panel 

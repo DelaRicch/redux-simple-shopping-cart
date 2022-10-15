@@ -23,6 +23,7 @@ const NavBar = () => {
     <nav>
       <div className="logo">
         <img src={Logo} alt={Logo} />
+        <h2>Shopping Cart</h2>
       </div>
 
       <div className="cart" onClick={showCartFunc}>

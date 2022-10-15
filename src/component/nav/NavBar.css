@@ -7,15 +7,28 @@ nav {
   justify-content: space-between;
   padding: 0 1rem;
   border-bottom: 2px solid rgba(79, 155, 255, 0.301);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  background: #ffffff;
 }
 
 nav .logo {
-  width: 6rem;
+  width: 16rem;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 nav .logo img {
-  width: 100%;
+  width: 20%;
+}
+
+nav .logo h2 {
+  color: #015db3ff;
+  font-weight: 500;
 }
 
 nav .cart {
@@ -55,5 +68,14 @@ nav .cart span {
   nav .logo {
    width: 5rem;
    height: 3rem;
+ }
+
+ nav .logo img {
+  width: 50%;
+ }
+
+ nav .logo h2 {
+  /* display: none; */
+  font-size: .8rem;
  }
 }
