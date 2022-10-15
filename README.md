@@ -18,3 +18,4 @@ TODO:
 4. Add animation using Framer Motion Library
 5. Implement User Login/ Registration functionalities
 6. Add admin panel 
+7. Implement Toast Notification using Toastify/ SweetAlert2

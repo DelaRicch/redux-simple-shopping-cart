@@ -22,7 +22,7 @@ const Cart = ({isOpen, showCartFunc}) => {
   if (cartContent < 1) {
     return (
       <aside className={isOpen ? "aside-show cart-empty" : ''}>
-        <h6>Your Cart is currently empty :(</h6>
+        <h5>Your Cart is currently empty :(</h5>
       </aside>
     )
   } else {

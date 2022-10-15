@@ -3,6 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
+    
     <footer>
       <span>All Rights Reserved &copy; </span>
       <span>2022 - {new Date().getFullYear()}</span>

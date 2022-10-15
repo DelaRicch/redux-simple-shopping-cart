@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addToCart } from '../../features/cart/CartSlice'
-import { getCartItems } from "../../features/cart/CartSlice";
 import './Home.css'
 
 
@@ -18,8 +17,6 @@ const Home = () => {
     } 
     
     else {
-
-    
 
   return (
     <main>
