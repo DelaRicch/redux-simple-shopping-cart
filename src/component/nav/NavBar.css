@@ -78,4 +78,8 @@ nav .cart span {
   /* display: none; */
   font-size: .8rem;
  }
+
+ nav .cart {
+  margin-right: 1rem;
+ }
 }
