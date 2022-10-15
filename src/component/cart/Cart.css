@@ -12,6 +12,12 @@ aside {
     flex-direction: column;
 }
 
+.cart-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .aside-show {
     display: flex;
 }
@@ -39,6 +45,32 @@ aside .cart-items .items .item-image {
 
 aside .cart-items .items .item-image img {
     width: 100%;
+}
+
+aside .cart-items .items .item-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+aside .cart-items .items .item-desc .remove {
+    width: max-content;
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: .2rem .7rem;
+    color: red;
+    padding: .2rem .5rem;
+    background: #ffffff;
+    transition: all .3s linear;
+}
+
+aside .cart-items .items .item-desc .remove:hover {
+    background: red;
+    color: #ffffff;
+}
+
+aside .cart-items .items .item-desc {
+    display: flex;
+    flex-direction: column;
 }
 
 aside .cart-items .items .item-desc h4 {
@@ -69,6 +101,7 @@ aside .cart-items .items .buttons button {
     color: #ffffff;
     transition: all .3s linear;
     width: 100%;
+    height: 100%;
 }
 
 aside .cart-items .items .buttons button:hover {
@@ -126,6 +159,12 @@ aside .clear-cart:hover {
         width: 10rem;
         height: auto;
     }
+
+    aside .cart-items .items .item-desc {
+        justify-content: center;
+        align-items: center;
+    }
+    
 
     aside .cart-items .items .buttons {
         flex-direction: row-reverse;

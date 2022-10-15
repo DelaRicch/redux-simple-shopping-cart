@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const {amount} = useSelector((store) => store.cart)
+  const {cartTotalQuantity} = useSelector((store) => store.cart)
 
   const showCartFunc = () => {
     if (isOpen === false) {
@@ -27,7 +27,7 @@ const NavBar = () => {
 
       <div className="cart" onClick={showCartFunc}>
         <BsCart4 className="cart-icon" />
-        <span>{amount}</span>
+        <span>{cartTotalQuantity}</span>
       </div>
 
       <Cart isOpen={isOpen} showCartFunc={showCartFunc} />

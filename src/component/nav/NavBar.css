@@ -40,10 +40,11 @@ nav .cart span {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  top: 0;
-  right: 0;
-  background: #fff01d;
-  z-index: -1;
+  top: 5px;
+  right: -10px;
+  background: #1d59ff;
+  color: #ffffff;
+  /* z-index: -1; */
 }
 
 @media screen and (max-width: 600px) {
