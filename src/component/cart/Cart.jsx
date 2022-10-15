@@ -29,9 +29,9 @@ const Cart = ({isOpen, showCartFunc}) => {
     
     return (
       <aside className={isOpen ? 'aside-show' : ''}>
+        <div className="cart-items">
       {cartContent.map((item) => (
-        <div key={item.id} className="cart-items">
-          <div className="items">
+          <div key={item.id} className="items">
             <div className="item-image">
               <img src={item.img} alt={item.name} />
             </div>
@@ -46,12 +46,13 @@ const Cart = ({isOpen, showCartFunc}) => {
               <span>{item.amount}</span>
               <button className="decrease" onClick={() => dispatch(decrease(item))}>-</button>
             </div>
+            <hr />
           </div>
-        </div>
       ))}
+      </div>
       <hr />
           <div className="total">
-            <span className="total-price">Total Price</span>
+            <span className="total-price">Total Price:</span>
             <span className="price">${totalPrice}</span>
           </div>
             <button className="clear-cart"  onClick={() => dispatch(clearCart(), showCartFunc())}>Clear Cart</button>
